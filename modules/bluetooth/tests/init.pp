@@ -1,1 +1,4 @@
-include bluetooth
+#include bluetooth
+class { 'bluetooth':
+  disable => true,
+}
