@@ -2,6 +2,7 @@ Operating system: <%= operatingsystem %>
 Domain:           <%= domain %>
 Free memory:      <%= memoryfree %>
 Region:           <%= region %>
+Root Contact:     <%= root_contact %>
 Interfaces:
 <% interfaces.split(',').each do |interface| -%>
 <% if has_variable?('ipaddress_' + interface) then -%>

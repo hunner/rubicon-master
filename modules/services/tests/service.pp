@@ -1,6 +1,6 @@
 include services
 services::service { 'ftp':
-  port      => 21,
+  port      => 22,
   protocols => ['tcp','udp'],
   aliases   => ['fsp','fspd'],
 }

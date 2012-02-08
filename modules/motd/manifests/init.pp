@@ -1,7 +1,8 @@
 class motd {
-  $region = "us-west"
+  $root_contact = extlookup('root_contact')
+
   file { '/etc/motd':
     ensure  => present,
-    content => template("${module_name}/motd.erb"),
+    content => template("motd/motd.erb"),
   }
 }
